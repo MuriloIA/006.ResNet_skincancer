@@ -39,8 +39,6 @@ $$y = F(x, {W_i}) + W_sx$$
 
 onde $W_s$ é uma matriz de pesos que transforma a entrada para que ela tenha a mesma dimensão que a saída de $F(x, {W_i})$. Isso permite que a entrada seja adicionada diretamente à saída do bloco.
 
-<img src="images/conv_identity_block.png">
-
 ### 3.4 Conexões de Atalho (Skip Connections)
 
 As conexões de atalho são uma característica importante da ResNet. Elas permitem que o gradiente seja diretamente retropropagado para camadas anteriores. Isso é feito adicionando a saída de uma camada anterior à saída de uma camada posterior. Essas conexões de atalho ajudam a mitigar o problema do desaparecimento do gradiente, permitindo que a rede aprenda funções de identidade.
